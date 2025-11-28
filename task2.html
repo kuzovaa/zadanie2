@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="menu">
+
+    <a href="#o-proekte" style="color: white;">О проекте</a>
+    <a href="#napravleniya" style="color: white;">Направления</a>
+    <a href="#galereya" style="color: white;">Галерея</a>
+    <a href="#planirovanie" style="color: white;">Планирование</a>
+    <a href="#kontakt" style="color: white;">Контакты</a>
+</div>
+
+<div class="blok">
+    <h3 id="o-proekte" class="zagolovok">О проекте</h3>
+    <p>
+        Добро пожаловать на сайт "Путешествия по России"!
+        Здесь вы найдете информацию о самых интересных местах нашей страны. 
+        </p>
+        <p>
+        Россия - самая большая страна в мире, и на её территории расположенно множество
+        уникальных природных и культурных достопримечательностей.
+    </p>
+</div>
+
+<div class="blok">
+    <h3 id="napravleniya" class="zagolovok">Популярные направления</h3>
+    <h4 class="podzagolovok">Топ-5 направлений для путешествий по России:</h4>
+<div id="spisok">
+        <ol>
+            <li>Озеро Байкал</li>
+            <li>Камчатка</li>
+            <li>Золотое кольцо России</li>
+            <li>Алтай</li>
+            <li>Калининградская область</li>
+        </ol> <br>
+</div>
+
+        <h4 class="podzagolovok">Сравнение направлений</h4>
+        <div>
+        <table>
+            <tr>
+                <th class="tabzag">Направление</th>
+                <th class="tabzag">Лучшее время для посещения</th>
+                <th class="tabzag">Средняя стоимость поездки</th>
+            </tr>
+
+            <tr>
+                <th>Озеро Байкал</th>
+                <th>Июль - август</th>
+                <th>30 000 руб.</th>
+            </tr>
+
+            <tr>
+                <th>Камчатка</th>
+                <th>Июль - сентябрь</th>
+                <th>70 000 руб.</th>
+            </tr>
+
+            <tr>
+                <th>Золотое кольцо</th>
+                <th>Май - сентябрь</th>
+                <th>20 000 руб.</th>
+            </tr>
+
+            <tr>
+                <th>Алтай</th>
+                <th>Июнь - август</th>
+                <th>25 000 руб.</th>
+            </tr>
+        </table>
+        </div>
+</div>
+
+<div class="blok">
+    <h3 id="galereya" class="zagolovok">Галерея</h3>
+
+    <h4 class="podzagolovok">Озеро Байкал</h4>
+    <img src="Байкал.jpeg" alt="Озеро Байкал">
+    <p>Озеро Байкал - самое глубокое в мире</p>
+
+
+    <h4 class="podzagolovok">Камчатка</h4>
+    <img src="Камчатка.jpg" alt="Камчатка">
+    <p>Камчатка - край вулканов и гейзеров</p>
+
+    <h4 class="podzagolovok">Алтай</h4>
+    <img src="Алтай.jpg" alt="Алтай">
+    <p>Алтай - горный край с уникальной природой</p>
+
+    <p>Больше фотографий вы можете найти на наших ресурсах:</p>
+   <div class="spisok1"> <ul>
+<li><a href="https://yandex.ru/images/search?lr=236&source=serp&stype=image&text=фото%20байкала">Фото Байкала</a></li>
+<li><a href="https://yandex.ru/images/search?lr=236&text=фото%20камчатки">Фото Камчатки</a></li>
+<li><a href="https://yandex.ru/images/search?lr=236&text=фото%20алтая">Фото Алтая</a></li>
+    </ul></div>
+
+</div>
+
+<div class="blok">
+    <h3 id="planirovanie" class="zagolovok">Планирование путешествия</h3>
+
+    <form action="#" method="POST">
+
+<label for="name">Ваше имя:</label> <br>
+<input type="text" name="name" id="name"> <br>
+
+<label for="email">Email:</label> <br>
+<input type="text" name="email" id="email"> <br>
+
+<label for="city">Выберите направление:</label> <br>
+<select name="city" id="city" --Выберите направление-->
+    <option value="ob">--Выберите направление--</option>
+    <option value="ob">Озеро Байкал</option>
+    <option value="kmch">Камчатка</option>
+    <option value="zk">Золотое кольцо</option>
+    <option value="alt">Алтай</option>
+    <option value="klg">Калининградская область</option>
+</select> <br>
+
+<div>
+
+    <label for="tip">Тип путешествия:</label> <br>
+    <input type="radio" name="tip" id="tip" value="individyal">Индивидуальное <br>
+    <input type="radio" name="tip" id="tip" value="group">Групповое <br>
+</div> <br>
+ <label for="dop">Дополнительные услуги:</label> <br>
+    <input type="checkbox" checked name="dop" id="dop" value="gid">Гид <br>
+    <input type="checkbox" name="dop" id="dop" value="transfer">Трансфер <br>
+    <input type="checkbox" name="dop" id="dop" value="insurance">Страховка <br>
+<div> <br>
+    <div>
+    <label for="comment">Комментарии и пожелания:</label> <br>
+     <input type="text" name="comment" id="comment">   
+    </div>
+
+    <button>Отправить заявку</button>
+    <button>Очистить форму</button>
+
+</div>
+</div>
+
+<div class="blok">
+    <h3 class="zagolovok" id="kontakt">Контакты</h3>
+    <p>Свяжитесь с нами для получения дополнительной информации:</p>
+    <ul>
+        <li>Телефон: <span style="color: rgb(35, 35, 81);">+7 (999) 123-45-67</span></li>
+        <li>Email: <span style="color: rgb(35, 35, 81);">info@travel-russia.ru</span></li>
+        <li>Адрес: Москва, ул. Путешественников, д. 10</li>
+    </ul>
+</div>
+
+<div id="footer">
+<p>&copy; 2023 Путешествия по России. Все права защищены.</p>
+</div>
+    </form>
+
+
+
+
+
+</body>
+</html>
